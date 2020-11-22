@@ -40,12 +40,29 @@ div.navbar ul {
   overflow: hidden;
 }
 
-.body {
+div.page_body {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 100px;
   margin-right: 100px;
 
-  padding: 50px;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 10px;
   background-color: lightgrey;
+}
+
+div.hunting_prices  {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+  margin-right: 100px;
+
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  background-color: lightgrey;
+
 }
