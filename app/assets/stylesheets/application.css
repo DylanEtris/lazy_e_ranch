@@ -14,12 +14,12 @@
  *= require_self
  */
 
-div.navbar li {
+#navbar li {
   float: left;
   border-right:1px solid #bbb
 }
 
-div.navbar li a {
+#navbar li a {
   display: block;
   color: white;
   text-align: center;
@@ -28,11 +28,11 @@ div.navbar li a {
 
 }
 
-div.navbar li a:hover{
+#navbar li a:hover{
   background-color: #111;
 }
 
-div.navbar ul {
+#navbar ul {
   list-style-type: none;
   background-color: #333;
   margin: 0;
@@ -40,7 +40,8 @@ div.navbar ul {
   overflow: hidden;
 }
 
-div.page_body {
+#content h2 {
+  text-align: center;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 100px;
@@ -53,7 +54,8 @@ div.page_body {
   background-color: lightgrey;
 }
 
-div.hunting_prices  {
+#content h3 {
+  text-align: center;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 100px;
@@ -64,5 +66,19 @@ div.hunting_prices  {
   padding-right: 50px;
   padding-bottom: 10px;
   background-color: lightgrey;
-
 }
+
+#content p {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+  margin-right: 100px;
+
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  background-color: lightgrey;
+}
+

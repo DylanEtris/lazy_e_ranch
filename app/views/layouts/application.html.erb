@@ -10,6 +10,15 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div id="header">
+      <h1> Serenity Cabin at Lazy E Ranch </h1>
+    </div>
+    <div id="navbar">
+      <%= render 'partials/navigation_bar' %>
+    </div>
+
+    <div id = "content" >
+      <%= yield %>
+    </div>
   </body>
 </html>
