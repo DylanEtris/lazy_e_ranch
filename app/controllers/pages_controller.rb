@@ -5,6 +5,12 @@ class PagesController < ApplicationController
   def gallery
     @image_paths = Dir.glob("#{Rails.root}/app/assets/images/*.JPG")
     @image_paths.map!{ |path| path.split('/').last()}
+    @image_paths.shuffle!
+    @col_1 = @image_paths.take(@image_paths.size / 3)
+    @image_paths = @image_paths - @col_1
+    @col_2 = @image_paths.take(@image_paths.size / 2)
+    @image_paths = @image_paths - @col_2
+    @col_3 = @image_paths
   end
 
   def about_us

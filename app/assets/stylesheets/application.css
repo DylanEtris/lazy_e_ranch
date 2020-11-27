@@ -124,21 +124,19 @@
   flex-wrap: nowrap;
   justify-content: flex-end;
 }*/
-.gallery ul {
-  list-style-type: none;
-  background-color: #333;
+.row {
+  display: flex;
   margin: 0 100px;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-align: center;
+  flex-wrap: wrap;
+  background-color: lightgray;
+  justify-content: center;
 }
 
-.gallery li img{
-  vertical-align: right;
-  margin: 4px;
-  display: inline-block;
-  float: left;
-  width: 32%;
+.column {
+  max-width: 32%;
+  padding: 0 2px;
 }
 
+.column img {
+  width: 100%
+}

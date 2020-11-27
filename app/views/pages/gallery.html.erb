@@ -1,15 +1,20 @@
 <h2>Gallery</h2>
 <div class="gallery">
-  <% num_columns = 3 %>
-  <% @image_paths.each_index {|i| %>
-    <% if i % num_columns == 0 %>
-      <ul>
-    <% end %>
-        <li>
-        <%= image_tag @image_paths[i] %>
-        </li>
-    <% if i % num_columns == num_columns - 1 || i == @image_paths.length - 1 %>
-      </ul>
-    <% end %>
-  <% } %>
+  <div class='row'>
+    <div class='column'>
+      <% @col_1.each { |image| %>
+          <%= image_tag image %>
+      <% } %>
+    </div>
+    <div class='column'>
+      <% @col_2.each { |image| %>
+          <%= image_tag image %>
+      <% } %>
+    </div>
+    <div class='column'>
+      <% @col_3.each { |image| %>
+          <%= image_tag image %>
+      <% } %>
+    </div>
+  </div>
 </div>
