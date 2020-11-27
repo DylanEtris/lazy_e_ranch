@@ -19,16 +19,15 @@
   border-right:1px solid #bbb
 }
 
-#navbar li a {
+#navbar a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-
 }
 
-#navbar li a:hover{
+#navbar a:hover{
   background-color: #111;
 }
 
@@ -40,6 +39,12 @@
   overflow: hidden;
 }
 
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vh;
+}
+
 #footer ul {
   list-style-type: none;
   background-color: #333; 
@@ -48,15 +53,27 @@
   overflow: hidden;
 }
 
-#footer li {
-  text-decoration: none;
-  padding: 10px 16px;
+#footer a {
   display: block;
   color: white;
   text-align: center;
+  text-decoration: none;
+  padding: 16px 16px;
+}
+
+#footer p {
+  padding: 0 16px;
+  color: white;
+  text-align: center;
+}
+
+#footer li {
   float: left;
   border-right:1px solid #bbb;
-  
+}
+
+#content {
+  margin-bottom: 50px;
 }
 
 #content h2 {
