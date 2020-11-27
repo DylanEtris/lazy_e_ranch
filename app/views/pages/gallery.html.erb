@@ -1,15 +1,15 @@
 <h2>Gallery</h2>
-<div id="gallery">
-  <div class="row">
-    <% num_columns = 3 %>
-    <% @image_paths.each_index {|i| %>
-      <% if i % num_columns == 0 %>
-        <div class="column">
-      <% end %>
-          <%= image_tag @image_paths[i], size: "500x500" %>
-      <% if i % num_columns == num_columns - 1 || i == @image_paths.length - 1 %>
-        </div>
-      <% end %>
-    <% } %>
-  </div>
+<div class="gallery">
+  <% num_columns = 3 %>
+  <% @image_paths.each_index {|i| %>
+    <% if i % num_columns == 0 %>
+      <ul>
+    <% end %>
+        <li>
+        <%= image_tag @image_paths[i] %>
+        </li>
+    <% if i % num_columns == num_columns - 1 || i == @image_paths.length - 1 %>
+      </ul>
+    <% end %>
+  <% } %>
 </div>

@@ -82,3 +82,26 @@
   background-color: lightgrey;
 }
 
+/*.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}*/
+.gallery ul {
+  list-style-type: none;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.gallery li img{
+  vertical-align: right;
+  margin: 4px;
+  display: inline-block;
+  float: left;
+  width: 32%;
+}
