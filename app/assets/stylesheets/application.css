@@ -40,6 +40,26 @@
   overflow: hidden;
 }
 
+#footer ul {
+  list-style-type: none;
+  background-color: #333; 
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#footer li {
+  position: fixed;
+  text-decoration: none;
+  padding: 10px 16px;
+  display: block;
+  color: white;
+  text-align: center;
+  float: left;
+  border-right:1px solid #bbb;
+  
+}
+
 #content h2 {
   text-align: center;
   margin-top: 0px;
@@ -105,3 +125,4 @@
   float: left;
   width: 32%;
 }
+
