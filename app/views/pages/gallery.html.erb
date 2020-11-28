@@ -1,20 +1,24 @@
 <h2>Gallery</h2>
-<div class="gallery">
-  <div class='row'>
-    <div class='column'>
-      <% @col_1.each { |image| %>
-          <%= image_tag image %>
-      <% } %>
-    </div>
-    <div class='column'>
-      <% @col_2.each { |image| %>
-          <%= image_tag image %>
-      <% } %>
-    </div>
-    <div class='column'>
-      <% @col_3.each { |image| %>
-          <%= image_tag image %>
-      <% } %>
+<% if @image_paths %>
+  <div class="gallery">
+    <div class='row'>
+      <div class='column'>
+        <% @col_1.each { |image| %>
+            <%= image_tag image %>
+        <% } %>
+      </div>
+      <div class='column'>
+        <% @col_2.each { |image| %>
+            <%= image_tag image %>
+        <% } %>
+      </div>
+      <div class='column'>
+        <% @col_3.each { |image| %>
+            <%= image_tag image %>
+        <% } %>
+      </div>
     </div>
   </div>
-</div>
+<% else %>
+  <h3>No pictures to display</h3>
+<% end %>
