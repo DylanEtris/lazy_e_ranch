@@ -14,6 +14,8 @@
  *= require_self
  */
 
+
+
 #navbar li {
   float: left;
   border-right:1px solid #bbb
@@ -28,12 +30,12 @@
 }
 
 #navbar a:hover{
-  background-color: #111;
+  background-color: #051F20;
 }
 
 #navbar ul {
   list-style-type: none;
-  background-color: #333;
+  background-color: #235347;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -47,7 +49,7 @@
 
 #footer ul {
   list-style-type: none;
-  background-color: #333; 
+  background-color: #235347; 
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -72,51 +74,69 @@
   border-right:1px solid #bbb;
 }
 
+#content .top_image {
+  overflow: hidden;
+  margin: 0 100px;
+  padding: 20px;
+  background-color: #8EB69B;
+}
+
+.top_image img {
+  margin: 0 20px 0 0;
+  max-width: 100%;
+  height: auto;
+  border-color: #0B2B26;
+  border-style: solid;
+  border-width: thick;
+}
+
+body {
+  background-color: #DAF1DE;
+}
+
 #content {
   margin-bottom: 50px;
 }
 
 #content h2 {
+  margin: auto;
   text-align: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 100px;
-  margin-right: 100px;
+  color: black;
 
   padding-left: 50px;
   padding-top: 10px;
   padding-right: 50px;
   padding-bottom: 10px;
-  background-color: lightgrey;
 }
 
 #content h3 {
+  margin: auto;
   text-align: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 100px;
-  margin-right: 100px;
+  color: black;
 
   padding-left: 50px;
   padding-top: 10px;
   padding-right: 50px;
   padding-bottom: 10px;
-  background-color: lightgrey;
 }
 
 #content p {
+  margin: auto;
   font-size: large;
   text-align: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 100px;
-  margin-right: 100px;
+  color: black;
 
   padding-left: 50px;
   padding-top: 10px;
   padding-right: 50px;
   padding-bottom: 10px;
-  background-color: lightgrey;
+  height: 100%;
+}
+
+.body_text {
+  height: 100%;
+  margin: 0 100px;
+  background-color: #8EB69B;
 }
 
 /*.container {
@@ -129,7 +149,7 @@
   display: flex;
   margin: 0 100px;
   flex-wrap: wrap;
-  background-color: lightgray;
+  background-color: #8EB69B;
   justify-content: center;
 }
 
