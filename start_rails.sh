@@ -1,1 +1,1 @@
-rails s -b beefbros -d
+rails s -b beefbros -p 3300 -d

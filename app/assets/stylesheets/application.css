@@ -75,19 +75,22 @@
 }
 
 #content .top_image {
-  overflow: hidden;
   margin: 0 100px;
+  overflow: hidden;
   padding: 20px;
   background-color: #8EB69B;
 }
 
 .top_image img {
-  margin: 0 20px 0 0;
   max-width: 100%;
   height: auto;
   border-color: #0B2B26;
   border-style: solid;
   border-width: thick;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 body {
@@ -131,6 +134,10 @@ body {
   padding-right: 50px;
   padding-bottom: 10px;
   height: 100%;
+}
+
+#udrl {
+  text-decoration: underline;
 }
 
 .body_text {
